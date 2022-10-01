@@ -1,0 +1,133 @@
+@import 'utilities.css';
+:root{
+    --blue:#3DCFD3;
+    --black:#161616;
+    --light:#898989;
+    --white:#FFFFFF;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+header{
+    background: var(--black);
+    
+}
+.container{
+    max-width: 1152px;
+    padding:0 15px;
+    margin:0 auto;
+
+}
+header nav .left a{
+    color:rgb(255, 255, 255);
+    text-decoration: none ;
+    margin-right: 2rem;
+    text-transform:uppercase;
+    transition:all .3s ease;
+}
+
+.intro .right{
+    color:rgb(255, 255, 255)
+}
+section.about .about-me-img{
+    height:450px;
+}
+.section-heading{
+    color:black;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading +p{
+    color:#3DCFD3;
+    font-family:'Lato',sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+section.skills{
+    background:#fcf5f5
+}
+section.skills .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+} 
+section.skills .card-wrapper .card{
+    background:white;
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top:5rem;
+    text-align: center;
+    transition: all .3s ease;
+}
+section.skills .card-wrapper .card img{
+    position:absolute;
+    top:-3.5rem;
+    left:50%;
+    transform: translateX(-50%);
+    height:80px;
+} 
+section.skills .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.skills .card-wrapper .card p{
+    font-family:'Lato', sans-serif;
+    color:#3DCFD3;
+    line-height:1.6;
+}
+section.skills .card-wrapper .card:hover{
+    background:#161616;
+}
+section.skills .card-wrapper .card:hover h2 , section.skills .card-wrapper .card:hover p{
+  color:white;
+}
+.btn-primary{
+    background:#3DCFD3;
+    color:#161616
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color:#3DCFD3;
+    color:#161616;
+}
+section.cv{
+    text-align: center;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(R.jfif);
+    clip-path:polygon(0 0,100% 0,100% 100%, 67% 80%, 0 100%);
+    padding-bottom: 14rem;
+
+}
+section.cv h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+section.cv p{
+    margin-bottom: 2rem;
+    font-family:'Lato', sans-serif;
+}
+section.project{
+    background:#f7eae7
+}
+section.project .card-wrapper{
+    text-align: center;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap: 4rem
+}
+section.project .card-wrapper .card img{
+height: 300px;
+width: 350px;
+}
+
+section.qual {
+    background-color:#f7eae7
+  
+}
+
